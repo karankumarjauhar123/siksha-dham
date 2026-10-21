@@ -1,0 +1,187 @@
+/* ============================================================
+   शिक्षा DHAM — सफलता की सीढ़ी (Staircase to Success) Styles
+   Modular, GPU-Accelerated, Fully Responsive
+   ============================================================ */
+
+.staircase-container {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  perspective: 1200px;
+}
+
+/* 3D Rectangular Architectural Step Styling */
+.stair-step {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.stair-step::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 0px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.95));
+  border: 1px solid #CBD5E1;
+  border-top: 3px solid #94A3B8;
+  box-shadow: 0 4px 14px -2px rgba(15, 41, 66, 0.08);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Active Step Glow */
+.stair-step.active::before {
+  border-color: #FDB813;
+  border-top: 4px solid #FDB813;
+  border-width: 1px;
+  border-top-width: 4px;
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFDF5 100%);
+  box-shadow: 0 12px 24px -4px rgba(253, 184, 19, 0.28), 0 0 0 1px #FDB813;
+  transform: translateY(-4px);
+}
+
+.stair-step.completed::before {
+  border-color: #107C41;
+  border-top: 4px solid #107C41;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0FDF4 100%);
+}
+
+.stair-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Student Avatar Pin with Lottie Animation (Enlarged & High Visibility) */
+#studentAvatar {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 35;
+  transition: left 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), top 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  will-change: left, top;
+  transform: translateZ(0);
+}
+
+/* Glowing golden aura behind character for standout contrast */
+#studentAvatar::before {
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(253, 184, 19, 0.4) 0%, rgba(253, 184, 19, 0.05) 65%, transparent 75%);
+  z-index: 1;
+  pointer-events: none;
+  animation: avatarAuraGlow 3s infinite ease-in-out;
+}
+
+@keyframes avatarAuraGlow {
+  0%, 100% { transform: scale(0.9); opacity: 0.5; }
+  50% { transform: scale(1.18); opacity: 0.9; }
+}
+
+/* Base landing shadow under skateboard wheels */
+.avatar-platform-shadow {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95px;
+  height: 14px;
+  background: radial-gradient(ellipse at center, rgba(15, 41, 66, 0.35) 0%, rgba(15, 41, 66, 0) 75%);
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+#lottieCharacter {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+#lottieCharacter svg {
+  width: 100% !important;
+  height: 100% !important;
+  overflow: visible;
+  filter: drop-shadow(0 8px 16px rgba(15, 41, 66, 0.28)) contrast(1.08) brightness(1.02);
+}
+
+/* Bouncing animation when student lands on a step */
+@keyframes stepBounce {
+  0% { transform: scale(1) translateY(0); }
+  30% { transform: scale(1.12, 0.88) translateY(-10px); }
+  60% { transform: scale(0.96, 1.04) translateY(-3px); }
+  100% { transform: scale(1) translateY(0); }
+}
+
+.avatar-bouncing {
+  animation: stepBounce 0.5s ease-out;
+}
+
+/* Footstep particles */
+.footstep-pulse {
+  position: absolute;
+  width: 24px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(253, 184, 19, 0.6);
+  transform: translate(-50%, -50%);
+  animation: ripple 0.8s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes ripple {
+  0% { transform: translate(-50%, -50%) scale(0.5); opacity: 1; }
+  100% { transform: translate(-50%, -50%) scale(2.5); opacity: 0; }
+}
+
+/* Golden Trophy Radiance */
+@keyframes trophyGlow {
+  0%, 100% { filter: drop-shadow(0 0 8px #FDB813); transform: scale(1); }
+  50% { filter: drop-shadow(0 0 20px #F59E0B); transform: scale(1.08); }
+}
+
+.trophy-radiant {
+  animation: trophyGlow 2s infinite ease-in-out;
+}
+
+/* Confetti Canvas */
+#confettiCanvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+}
+
+/* Ascending Step Elevations on Desktop (Stairs Rise Upwards to eliminate bottom clipping) */
+@media (min-width: 1024px) {
+  .stair-step[data-step="1"] { transform: translateY(0px); }
+  .stair-step[data-step="2"] { transform: translateY(-20px); }
+  .stair-step[data-step="3"] { transform: translateY(-40px); }
+  .stair-step[data-step="4"] { transform: translateY(-64px); }
+  .stair-step[data-step="5"] { transform: translateY(-84px); }
+
+  .stair-step[data-step="1"].active { transform: translateY(-6px); }
+  .stair-step[data-step="2"].active { transform: translateY(-26px); }
+  .stair-step[data-step="3"].active { transform: translateY(-46px); }
+  .stair-step[data-step="4"].active { transform: translateY(-70px); }
+  .stair-step[data-step="5"].active { transform: translateY(-90px); }
+}
+
+@media (max-width: 1023px) {
+  #studentAvatar {
+    width: 120px;
+    height: 120px;
+  }
+}
+
