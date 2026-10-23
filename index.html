@@ -442,32 +442,32 @@
             <form id="heroForm" class="space-y-4">
               <div>
                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">विद्यार्थी का नाम (Student Name) *</label>
-                <input type="text" required placeholder="उदा. राहुल कुमार" class="w-full px-3.5 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
+                <input type="text" name="studentName" required placeholder="उदा. राहुल कुमार" class="w-full px-3.5 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
               </div>
 
               <div class="grid grid-cols-2 gap-3">
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">कक्षा (Class) *</label>
-                  <select required class="w-full px-3 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
+                  <select name="studentClass" required class="w-full px-3 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
                     <option value="">कक्षा / सेवा चुनें</option>
-                    <option value="6-8">Class 6th to 8th (All Subjects)</option>
-                    <option value="9">Class 9th (केवल Maths & Science)</option>
-                    <option value="10">Class 10th (केवल Maths & Science)</option>
-                    <option value="11-sci">Class 11th (Science PCM/PCB)</option>
-                    <option value="12-sci">Class 12th (Science PCM/PCB)</option>
-                    <option value="11-12-comm">Class 11th/12th (Commerce)</option>
-                    <option value="comp">CUET / NDA / Nursing / CA</option>
-                    <option value="home-tuition">🏠 होम ट्यूशन चाहिए (Home Tuition - All Subjects)</option>
+                    <option value="Class 6th to 8th (All Subjects)">Class 6th to 8th (All Subjects)</option>
+                    <option value="Class 9th (केवल Maths & Science)">Class 9th (केवल Maths & Science)</option>
+                    <option value="Class 10th (केवल Maths & Science)">Class 10th (केवल Maths & Science)</option>
+                    <option value="Class 11th (Science PCM/PCB)">Class 11th (Science PCM/PCB)</option>
+                    <option value="Class 12th (Science PCM/PCB)">Class 12th (Science PCM/PCB)</option>
+                    <option value="Class 11th/12th (Commerce)">Class 11th/12th (Commerce)</option>
+                    <option value="CUET / NDA / Nursing / CA">CUET / NDA / Nursing / CA</option>
+                    <option value="होम ट्यूशन (Home Tuition - All Subjects)">🏠 होम ट्यूशन चाहिए (Home Tuition - All Subjects)</option>
                   </select>
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">बोर्ड (Board) *</label>
-                  <select required class="w-full px-3 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
+                  <select name="studentBoard" required class="w-full px-3 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
                     <option value="">बोर्ड चुनें</option>
-                    <option value="cbse">CBSE Board</option>
-                    <option value="icse">ICSE Board</option>
-                    <option value="up">UP Board</option>
-                    <option value="other">प्रतियोगी परीक्षा</option>
+                    <option value="CBSE Board">CBSE Board</option>
+                    <option value="ICSE Board">ICSE Board</option>
+                    <option value="UP Board">UP Board</option>
+                    <option value="प्रतियोगी परीक्षा (CUET/NDA)">प्रतियोगी परीक्षा</option>
                   </select>
                 </div>
               </div>
@@ -476,7 +476,7 @@
                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">मोबाइल नंबर (WhatsApp No.) *</label>
                 <div class="relative">
                   <span class="absolute left-3 top-2.5 text-xs text-slate-500 font-bold">+91</span>
-                  <input type="tel" pattern="[0-9]{10}" required placeholder="10 अंकों का मोबाइल नंबर" class="w-full pl-12 pr-3.5 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
+                  <input type="tel" name="studentPhone" pattern="[0-9]{10}" required placeholder="10 अंकों का मोबाइल नंबर" class="w-full pl-12 pr-3.5 py-2.5 rounded-none border border-slate-300 text-sm focus:outline-none focus:border-brandNavy focus:ring-1 focus:ring-brandNavy transition">
                 </div>
               </div>
 
@@ -1810,38 +1810,38 @@
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">विद्यार्थी का नाम *</label>
-                  <input type="text" required placeholder="पूरा नाम लिखें" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
+                  <input type="text" name="studentName" required placeholder="पूरा नाम लिखें" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">अभिभावक का नाम *</label>
-                  <input type="text" required placeholder="पिता/माता का नाम" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
+                  <input type="text" name="parentName" required placeholder="पिता/माता का नाम" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
                 </div>
               </div>
 
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">मोबाइल नंबर (WhatsApp) *</label>
-                  <input type="tel" pattern="[0-9]{10}" required placeholder="10 अंकों का मोबाइल नंबर" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
+                  <input type="tel" name="phone" pattern="[0-9]{10}" required placeholder="10 अंकों का मोबाइल नंबर" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">कक्षा (Class) *</label>
-                  <select required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
+                  <select name="studentClass" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
                     <option value="">कक्षा / सेवा चुनें</option>
-                    <option value="Home-Tuition">🏠 होम ट्यूशन (कक्षा 1 से 12 - सभी विषय)</option>
-                    <option value="6">Class 6th (All Subjects)</option>
-                    <option value="7">Class 7th (All Subjects)</option>
-                    <option value="8">Class 8th (All Subjects)</option>
-                    <option value="9">Class 9th (केवल Maths & Science)</option>
-                    <option value="10">Class 10th (केवल Maths & Science)</option>
-                    <option value="11-pcm">Class 11th (PCM)</option>
-                    <option value="11-pcb">Class 11th (PCB)</option>
-                    <option value="11-comm">Class 11th (Commerce)</option>
-                    <option value="12-pcm">Class 12th (PCM)</option>
-                    <option value="12-pcb">Class 12th (PCB)</option>
-                    <option value="12-comm">Class 12th (Commerce)</option>
-                    <option value="cuet">CUET / Entrance</option>
-                    <option value="nda">NDA</option>
-                    <option value="nursing">B.Sc Nursing</option>
+                    <option value="होम ट्यूशन (Home Tuition - All Subjects)">🏠 होम ट्यूशन (कक्षा 1 से 12 - सभी विषय)</option>
+                    <option value="Class 6th (All Subjects)">Class 6th (All Subjects)</option>
+                    <option value="Class 7th (All Subjects)">Class 7th (All Subjects)</option>
+                    <option value="Class 8th (All Subjects)">Class 8th (All Subjects)</option>
+                    <option value="Class 9th (केवल Maths & Science)">Class 9th (केवल Maths & Science)</option>
+                    <option value="Class 10th (केवल Maths & Science)">Class 10th (केवल Maths & Science)</option>
+                    <option value="Class 11th (PCM)">Class 11th (PCM)</option>
+                    <option value="Class 11th (PCB)">Class 11th (PCB)</option>
+                    <option value="Class 11th (Commerce)">Class 11th (Commerce)</option>
+                    <option value="Class 12th (PCM)">Class 12th (PCM)</option>
+                    <option value="Class 12th (PCB)">Class 12th (PCB)</option>
+                    <option value="Class 12th (Commerce)">Class 12th (Commerce)</option>
+                    <option value="CUET / Entrance">CUET / Entrance</option>
+                    <option value="NDA">NDA</option>
+                    <option value="B.Sc Nursing">B.Sc Nursing</option>
                   </select>
                 </div>
               </div>
@@ -1849,21 +1849,21 @@
               <div class="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">बोर्ड (Board) *</label>
-                  <select required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
-                    <option value="CBSE">CBSE Board</option>
-                    <option value="ICSE">ICSE Board</option>
-                    <option value="UP">UP Board</option>
+                  <select name="board" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
+                    <option value="CBSE Board">CBSE Board</option>
+                    <option value="ICSE Board">ICSE Board</option>
+                    <option value="UP Board">UP Board</option>
                   </select>
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-slate-700 uppercase mb-1">इलाका / शहर</label>
-                  <input type="text" placeholder="उदा. बिछिया, गोरखपुर" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
+                  <input type="text" name="locality" placeholder="उदा. बिछिया, गोरखपुर" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy">
                 </div>
               </div>
 
               <div>
                 <label class="block text-xs font-bold text-slate-700 uppercase mb-1">कोई प्रश्न या संदेश</label>
-                <textarea rows="2" placeholder="कोई विशेष प्रश्न या डाउट..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy"></textarea>
+                <textarea name="message" rows="2" placeholder="कोई विशेष प्रश्न या डाउट..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-brandNavy"></textarea>
               </div>
 
               <button type="submit" class="w-full bg-brandNavy hover:bg-brandNavyDark text-white font-extrabold py-3.5 rounded-xl shadow-lg transition flex items-center justify-center gap-2">
@@ -1986,12 +1986,32 @@
       });
     }
 
+    const saveAndRouteLead = (leadData, source) => {
+      try {
+        const existing = JSON.parse(localStorage.getItem('shiksha_dham_leads') || '[]');
+        existing.push({ ...leadData, source, timestamp: new Date().toISOString() });
+        localStorage.setItem('shiksha_dham_leads', JSON.stringify(existing));
+      } catch (err) {
+        console.error('Storage error:', err);
+      }
+    };
+
     const contactForm = document.getElementById('contactForm');
     const formSuccess = document.getElementById('formSuccess');
     if (contactForm && formSuccess) {
       contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
+        const formData = new FormData(contactForm);
+        const data = Object.fromEntries(formData.entries());
+        saveAndRouteLead(data, 'Detailed Contact & Admission Form');
+
+        const text = `नमस्ते S.P. सर, मैंने शिक्षा DHAM वेबसाइट से एडमिशन/परामर्श फॉर्म भरा है:\n\n👤 *छात्र का नाम:* ${data.studentName || ''}\n👨‍👦 *अभिभावक:* ${data.parentName || ''}\n📱 *मोबाइल:* ${data.phone || ''}\n📚 *कक्षा:* ${data.studentClass || ''}\n🏛️ *बोर्ड:* ${data.board || ''}\n📍 *इलाका:* ${data.locality || 'गोरखपुर'}\n💬 *संदेश:* ${data.message || 'निःशुल्क डेमो व परामर्श चाहिए'}\n\nकृपया शीघ्र संपर्क करें!`;
+
+        const waUrl = `https://api.whatsapp.com/send?phone=918887954929&text=${encodeURIComponent(text)}`;
+        window.open(waUrl, '_blank');
+
         formSuccess.classList.remove('hidden');
+        formSuccess.innerHTML = `🎉 <strong>धन्यवाद! आपकी इंक्वायरी सफलतापूर्वक दर्ज कर ली गई है।</strong><br/><span class="text-xs">डायरेक्टर S.P. सर (+91 8887954929) के WhatsApp पर आपकी जानकारी भेज दी गई है।</span><br/><a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="inline-inline mt-2 text-xs font-bold bg-emerald-600 text-white px-3 py-1.5 rounded-none shadow hover:bg-emerald-700 transition"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp पर अभी बातचीत शुरू करें →</a>`;
         contactForm.reset();
       });
     }
@@ -2000,7 +2020,15 @@
     if (heroForm) {
       heroForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('🎉 आपकी फ्री डेमो क्लास सीट लॉक हो गई है! हमारे शिक्षक जल्द ही आपसे संपर्क करेंगे।');
+        const formData = new FormData(heroForm);
+        const data = Object.fromEntries(formData.entries());
+        saveAndRouteLead(data, 'Hero Quick Demo Form');
+
+        const text = `नमस्ते S.P. सर, मैंने शिक्षा DHAM वेबसाइट से 3-दिन फ्री डेमो क्लास हेतु फॉर्म भरा है:\n\n👤 *छात्र का नाम:* ${data.studentName || ''}\n📚 *कक्षा:* ${data.studentClass || ''}\n🏛️ *बोर्ड:* ${data.studentBoard || ''}\n📱 *मोबाइल:* ${data.studentPhone || ''}\n\nकृपया मेरी 3-दिन फ्री डेमो क्लास सीट कन्फर्म करें!`;
+
+        const waUrl = `https://api.whatsapp.com/send?phone=918887954929&text=${encodeURIComponent(text)}`;
+        window.open(waUrl, '_blank');
+        alert(`🎉 बधाई! आपकी फ्री डेमो क्लास सीट लॉक हो गई है!\n\nडायरेक्टर S.P. सर (+91 8887954929) के WhatsApp पर आपकी जानकारी भेज दी गई है। हमारे शिक्षक जल्द ही आपसे संपर्क करेंगे।`);
         heroForm.reset();
       });
     }
