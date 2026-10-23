@@ -145,7 +145,7 @@
         <a href="tel:8887954929" class="hover:text-brandGold transition flex items-center gap-1.5">
           <i class="fa-solid fa-phone text-brandGold"></i> 8887954929
         </a>
-        <a href="https://wa.me/919807281272" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1.5 text-emerald-400">
+        <a href="https://wa.me/919807281272" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center gap-1.5 text-emerald-400">
           <i class="fa-brands fa-whatsapp"></i> 9807281272
         </a>
       </div>
@@ -607,7 +607,7 @@
 
         <!-- 10. S. P. Sir Director Portrait (Real Photo) -->
         <div class="gallery-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition flex flex-col justify-between" data-category="events">
-          <div class="relative overflow-hidden cursor-pointer group" onclick="openLightbox(9)">
+          <div class="relative overflow-hidden cursor-pointer group" role="button" tabindex="0" onclick="openLightbox(9)" onkeydown="if(event.key==='Enter'||event.key===' ')openLightbox(9)" aria-label="S.P. सर की बड़ी तस्वीर देखें">
             <img src="assets/sp_sir.jpg" alt="S. P. Sir - Director Shiksha Dham Gorakhpur" class="w-full h-64 object-cover object-top group-hover:scale-105 transition duration-500">
             <span class="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-black bg-brandGold text-brandNavy shadow-sm font-hindi">
               निदेशक एवं मेंटर

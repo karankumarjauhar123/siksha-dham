@@ -252,7 +252,7 @@
   <!-- Modular Staircase to Success Animation Stylesheet -->
   <link rel="stylesheet" href="assets/staircase.css">
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brandGold selection:text-brandNavy">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brandGold selection:text-brandNavy pb-14 md:pb-0">
 
   <!-- ================= TOP UTILITY BAR ================= -->
   <div class="bg-brandNavyDark text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-white/10">
@@ -269,7 +269,7 @@
         <a href="tel:8887954929" class="hover:text-brandGold transition flex items-center gap-1.5">
           <i class="fa-solid fa-phone text-brandGold"></i> 8887954929
         </a>
-        <a href="https://wa.me/919807281272" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1.5 text-emerald-400">
+        <a href="https://wa.me/919807281272" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition flex items-center gap-1.5 text-emerald-400">
           <i class="fa-brands fa-whatsapp text-emerald-400"></i> 9807281272
         </a>
       </div>
@@ -358,8 +358,15 @@
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         <!-- Left Column: Value Proposition -->
         <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2.5 bg-brandNavy/90 border-l-4 border-brandGold border-y border-r border-white/20 px-4 py-2 rounded-none text-xs sm:text-sm font-bold uppercase tracking-wider text-brandGold shadow-md">
-            <i class="fa-solid fa-award text-brandGold"></i> गोरखपुर का सर्वश्रेष्ठ परिणाम-उन्मुख कोचिंग संस्थान
+          <div class="flex flex-wrap items-center gap-2.5">
+            <div class="inline-flex items-center gap-2.5 bg-brandNavy/90 border-l-4 border-brandGold border-y border-r border-white/20 px-4 py-2 rounded-none text-xs sm:text-sm font-bold uppercase tracking-wider text-brandGold shadow-md">
+              <i class="fa-solid fa-award text-brandGold"></i> गोरखपुर का सर्वश्रेष्ठ परिणाम-उन्मुख कोचिंग संस्थान
+            </div>
+            <a href="https://maps.app.goo.gl/oCCRmbuG4i6CQBcs8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 border border-white/20 px-3 py-2 rounded-none text-xs font-bold text-amber-300 transition">
+              <span class="text-amber-400">★★★★★</span>
+              <span>4.9/5 (184+ Google Reviews)</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[9px] text-slate-300"></i>
+            </a>
           </div>
 
           <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
@@ -429,12 +436,13 @@
             </div>
 
             <div class="flex items-center gap-3 mb-6 pb-4 border-b border-slate-200">
-              <div class="w-10 h-10 rounded-none bg-brandNavy flex items-center justify-center text-brandGold font-bold border border-brandGold/40 shadow-xs">
-                <i class="fa-solid fa-chalkboard-user text-xl"></i>
-              </div>
+              <img src="assets/sp_sir.jpg" alt="S.P. Sir - Director Shiksha Dham Gorakhpur" class="w-12 h-12 object-cover object-top border-2 border-brandGold shadow-sm">
               <div>
-                <h3 class="font-extrabold text-lg text-brandNavy">3 दिन की निशुल्क डेमो क्लास</h3>
-                <p class="text-xs text-slate-500 font-medium">बिना किसी शुल्क के शिक्षकों की गुणवत्ता जांचें</p>
+                <div class="flex items-center gap-2">
+                  <h3 class="font-extrabold text-base sm:text-lg text-brandNavy">3 दिन की निशुल्क डेमो क्लास</h3>
+                  <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-1.5 py-0.5 border border-emerald-300">Free Pass</span>
+                </div>
+                <p class="text-xs text-slate-600 font-medium font-hindi">मार्गदर्शन: <strong>S.P. सर</strong> (निदेशक एवं वरिष्ठ शिक्षक)</p>
               </div>
             </div>
 
@@ -481,7 +489,7 @@
               </div>
 
               <button type="submit" class="w-full bg-brandNavy hover:bg-brandNavyDark text-white font-black py-3 rounded-none shadow-md hover:shadow-lg transition flex items-center justify-center gap-2 text-xs uppercase tracking-wider border border-brandNavy">
-                <span>फ्री डेमो क्लास सीट लॉक करें</span>
+                <span>फ्री 3-दिन डेमो सीट रिज़र्व करें (कोई शुल्क नहीं)</span>
                 <i class="fa-solid fa-arrow-right text-brandGold"></i>
               </button>
 
@@ -1976,6 +1984,18 @@
     </div>
   </footer>
 
+  <!-- ================= MOBILE PERSISTENT STICKY CALL & WHATSAPP BAR (Fitts's Law) ================= -->
+  <aside class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-brandNavy/95 backdrop-blur-md border-t-2 border-brandGold px-3 py-2 flex items-center gap-2 shadow-2xl" aria-label="त्वरित संपर्क बार">
+    <a href="tel:8887954929" class="flex-1 bg-brandNavy border border-brandGold/60 hover:bg-white/10 text-brandGold text-xs font-black py-2.5 px-2 flex items-center justify-center gap-1.5 transition active:scale-95 shadow-sm">
+      <i class="fa-solid fa-phone-volume text-sm"></i>
+      <span>कॉल S.P. सर</span>
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=918887954929&text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20S.P.%20%E0%A4%B8%E0%A4%B0,%20%E0%A4%AE%E0%A5%81%E0%A4%9B%E0%A5%87%20%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE%20DHAM%20%E0%A4%95%E0%A5%80%203-%E0%A4%A6%E0%A4%BF%E0%A4%A8%20%E0%A4%AB%E0%A5%8D%E0%A4%B0%E0%A5%80%20%E0%A4%A1%E0%A5%87%E0%A4%AE%E0%A5%8B%20%E0%A4%95%E0%A5%8D%E0%A4%B2%E0%A4%BE%E0%A4%B8%20%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81%20%E0%A4%B8%E0%A5%80%E0%A4%9F%20%E0%A4%B2%E0%A5%89%E0%A4%95%20%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A5%80%20%E0%A4%B9%E0%A5%88" target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-black py-2.5 px-2 flex items-center justify-center gap-1.5 transition active:scale-95 shadow-md">
+      <i class="fa-brands fa-whatsapp text-sm"></i>
+      <span>WhatsApp डेमो</span>
+    </a>
+  </aside>
+
   <!-- Simple script for mobile menu & form confirmation -->
   <script>
     const mobileBtn = document.getElementById('mobileMenuBtn');
@@ -2011,7 +2031,7 @@
         window.open(waUrl, '_blank');
 
         formSuccess.classList.remove('hidden');
-        formSuccess.innerHTML = `🎉 <strong>धन्यवाद! आपकी इंक्वायरी सफलतापूर्वक दर्ज कर ली गई है।</strong><br/><span class="text-xs">डायरेक्टर S.P. सर (+91 8887954929) के WhatsApp पर आपकी जानकारी भेज दी गई है।</span><br/><a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="inline-inline mt-2 text-xs font-bold bg-emerald-600 text-white px-3 py-1.5 rounded-none shadow hover:bg-emerald-700 transition"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp पर अभी बातचीत शुरू करें →</a>`;
+        formSuccess.innerHTML = `🎉 <strong>धन्यवाद! आपकी इंक्वायरी सफलतापूर्वक दर्ज कर ली गई है।</strong><br/><span class="text-xs">डायरेक्टर S.P. सर (+91 8887954929) के WhatsApp पर आपकी जानकारी भेज दी गई है।</span><br/><a href="${waUrl}" target="_blank" rel="noopener noreferrer" class="inline-flex mt-2 text-xs font-bold bg-emerald-600 text-white px-3 py-1.5 rounded-none shadow hover:bg-emerald-700 transition"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp पर अभी बातचीत शुरू करें →</a>`;
         contactForm.reset();
       });
     }
