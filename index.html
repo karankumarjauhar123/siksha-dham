@@ -220,6 +220,34 @@
         "provider": {
           "@id": "https://shikshadham.com/#organization"
         }
+      },
+      {
+        "@type": "JobPosting",
+        "@id": "https://shikshadham.com/#job-faculty-gorakhpur",
+        "title": "Faculty & Home Tutor Recruitment (सभी विषय • Class 1 to 12 & Competitive)",
+        "description": "शिक्षा DHAM (पूर्व में दिशा क्लासेस), बिछिया, गोरखपुर में ऊर्जावान एवं अनुभवी शिक्षकों की आवश्यकता है। ऑफलाइन कोचिंग सेंटर एवं पूरे गोरखपुर में होम ट्यूशन हेतु गणित, विज्ञान, भौतिकी, रसायन, जीव विज्ञान, कॉमर्स व जूनियर विंग्स शिक्षक आमंत्रित हैं।",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Shiksha Dham Gorakhpur",
+          "value": "SD-TEACHER-2026"
+        },
+        "datePosted": "2026-01-15",
+        "validThrough": "2027-03-31",
+        "employmentType": ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
+        "hiringOrganization": {
+          "@id": "https://shikshadham.com/#organization"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "PAC Camp Near Union ATM, North Lane, Bichhiya",
+            "addressLocality": "Gorakhpur",
+            "addressRegion": "Uttar Pradesh",
+            "postalCode": "273014",
+            "addressCountry": "IN"
+          }
+        }
       }
     ]
   }
@@ -297,11 +325,14 @@
   <!-- ================= TOP UTILITY BAR ================= -->
   <div class="bg-brandNavyDark text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-white/10">
     <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2.5 sm:gap-3">
         <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-none text-xs font-bold uppercase tracking-wider bg-brandGold text-brandNavy border border-brandGoldDark/40">
           <i class="fa-solid fa-graduation-cap"></i> Session 2026-27 Admissions Open
         </span>
-        <span class="hidden md:inline-flex items-center gap-1 text-slate-300">
+        <a href="#careers" class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-none text-xs font-bold uppercase tracking-wider bg-amber-400/20 hover:bg-brandGold text-amber-300 hover:text-brandNavy border border-amber-300/40 transition">
+          <i class="fa-solid fa-briefcase text-brandGold group-hover:text-brandNavy"></i> <span>शिक्षक भर्ती (Careers)</span>
+        </a>
+        <span class="hidden xl:inline-flex items-center gap-1 text-slate-300">
           <i class="fa-solid fa-location-dot text-brandGold"></i> PAC Camp Near Union ATM, Bichhiya, Gorakhpur
         </span>
       </div>
@@ -376,6 +407,9 @@
       <a href="#faculty" class="block font-semibold text-slate-700 hover:text-brandGold py-1">फैकल्टी टीम (Mentors)</a>
       <a href="gallery.html" class="block font-bold text-amber-900 bg-amber-50 px-3 py-2 rounded-none border border-amber-200 shadow-2xs">
         <i class="fa-solid fa-images text-brandGold mr-1.5"></i> फ़ोटो गैलरी (Photo Gallery)
+      </a>
+      <a href="#careers" class="block font-bold text-amber-900 bg-amber-50 px-3 py-2 rounded-none border border-amber-300 shadow-2xs">
+        <i class="fa-solid fa-briefcase text-amber-700 mr-1.5"></i> शिक्षक भर्ती (Career - Join as Teacher)
       </a>
       <a href="#faq" class="block font-semibold text-slate-700 hover:text-brandGold py-1">FAQ (अक्सर पूछे जाने वाले सवाल)</a>
       <a href="#contact" class="block font-semibold text-slate-700 hover:text-brandGold py-1">संपर्क करें (Contact & Location)</a>
@@ -1788,6 +1822,343 @@
           </div>
         </div>
       </div>
+
+      <!-- TEACHER RECRUITMENT CALLOUT BANNER -->
+      <div class="mt-10 bg-gradient-to-r from-brandNavy to-slate-900 text-white p-6 sm:p-8 rounded-none border-l-4 border-l-brandGold border-y border-r border-slate-700 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 text-center md:text-left">
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-black uppercase tracking-wider bg-brandGold text-brandNavy px-2.5 py-0.5">
+            <i class="fa-solid fa-chalkboard-user"></i> शिक्षक भर्ती 2026-27 (Faculty Recruitment)
+          </span>
+          <h3 class="text-xl sm:text-2xl font-black text-white font-hindi">
+            क्या आप एक समर्पित शिक्षक हैं? शिक्षा DHAM परिवार से जुड़ें!
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-300 font-hindi max-w-2xl leading-relaxed">
+            यदि आपमें विद्यार्थियों के भविष्य को संवारने का समर्पण और अपने विषय पर गहरी पकड़ है, तो हमारे प्रतिष्ठित शिक्षक दल का हिस्सा बनें। ऑफलाइन कोचिंग कक्षाओं व पूरे गोरखपुर में होम ट्यूशन हेतु शिक्षकों का स्वागत है।
+          </p>
+        </div>
+        <a href="#careers" class="flex-shrink-0 inline-flex items-center gap-2 bg-brandGold hover:bg-brandGoldDark text-brandNavy font-black px-6 py-3 rounded-none text-xs sm:text-sm uppercase tracking-wider shadow-md hover:shadow-lg transition">
+          <i class="fa-solid fa-paper-plane"></i>
+          <span>शिक्षक पद हेतु आवेदन करें &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEACHER CAREERS & RECRUITMENT PORTAL ================= -->
+  <section id="careers" class="py-16 sm:py-24 bg-white border-t border-b border-slate-200 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-brandNavy bg-amber-50 px-3.5 py-1.5 rounded-none border-l-4 border-l-brandGold border-y border-r border-amber-200 shadow-2xs">
+          <i class="fa-solid fa-briefcase text-brandGold"></i> Join Our Mentorship Team (शिक्षक भर्ती 2026-27)
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brandNavy mt-3 font-hindi">
+          शिक्षा DHAM शिक्षक भर्ती — गोरखपुर के श्रेष्ठ दल से जुड़ें
+        </h2>
+        <p class="text-slate-600 mt-2 text-sm sm:text-base font-hindi leading-relaxed">
+          यदि आप एक ऊर्जावान, योग्य और समर्पित शिक्षक हैं, तो शिक्षा DHAM कोचिंग सेंटर (बिछिया) एवं पूरे गोरखपुर शहर में हमारे 'होम ट्यूशन नेटवर्क' के लिए आपका हार्दिक स्वागत है।
+        </p>
+      </div>
+
+      <!-- 4 Role Openings Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <!-- 1. Junior Wings -->
+        <div class="bg-slate-50 p-6 rounded-none border-t-4 border-t-pink-500 border-x border-b border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-none bg-pink-100 text-pink-700 flex items-center justify-center text-xl font-bold mb-3 border border-pink-200">
+              <i class="fa-solid fa-shapes"></i>
+            </div>
+            <h3 class="text-base font-bold text-brandNavy">Junior Wings Faculty</h3>
+            <p class="text-xs text-pink-700 font-bold mt-0.5">Playway, Nursery, LKG, UKG to 5th</p>
+            <p class="text-xs text-slate-600 mt-2 font-hindi leading-relaxed">
+              छोटे बच्चों के बुनियादी बौद्धिक विकास, खेल-खेल में अंग्रेजी, गणित व हिंदी सिखाने हेतु धैर्यवान व ममतामयी शिक्षक।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-700 font-semibold">
+            <span class="text-brandNavy font-bold">योग्यता:</span> Graduate / D.El.Ed / B.Ed
+          </div>
+        </div>
+
+        <!-- 2. Secondary 9th-10th -->
+        <div class="bg-slate-50 p-6 rounded-none border-t-4 border-t-blue-600 border-x border-b border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-none bg-blue-100 text-blue-800 flex items-center justify-center text-xl font-bold mb-3 border border-blue-200">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+            <h3 class="text-base font-bold text-brandNavy">Class 9th & 10th (Maths / Sci)</h3>
+            <p class="text-xs text-blue-700 font-bold mt-0.5">केवल गणित एवं विज्ञान विशेषज्ञ</p>
+            <p class="text-xs text-slate-600 mt-2 font-hindi leading-relaxed">
+              NCERT कॉन्सेप्ट्स, बोर्ड परीक्षा तैयारी, और नियमित 100-अंक टेस्ट में विद्यार्थियों का स्कोर 90%+ लाने का संकल्प।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-700 font-semibold">
+            <span class="text-brandNavy font-bold">योग्यता:</span> B.Sc / M.Sc / B.Tech / B.Ed
+          </div>
+        </div>
+
+        <!-- 3. Senior Secondary 11th-12th -->
+        <div class="bg-slate-50 p-6 rounded-none border-t-4 border-t-brandGold border-x border-b border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-none bg-amber-100 text-brandNavy flex items-center justify-center text-xl font-bold mb-3 border border-amber-300">
+              <i class="fa-solid fa-atom"></i>
+            </div>
+            <h3 class="text-base font-bold text-brandNavy">Class 11th & 12th Faculty</h3>
+            <p class="text-xs text-amber-800 font-bold mt-0.5">Physics, Chem, Maths, Bio, Accounts, Eco</p>
+            <p class="text-xs text-slate-600 mt-2 font-hindi leading-relaxed">
+              बोर्ड परीक्षा एवं फाउंडेशन (JEE / NEET / CUET / CA Foundation) स्तर की गंभीर विषयवार अध्यापन क्षमता।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-700 font-semibold">
+            <span class="text-brandNavy font-bold">योग्यता:</span> Post Graduate (M.Sc / M.Com / M.A) / B.Ed
+          </div>
+        </div>
+
+        <!-- 4. Gorakhpur Home Tutors -->
+        <div class="bg-slate-50 p-6 rounded-none border-t-4 border-t-emerald-600 border-x border-b border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-none bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl font-bold mb-3 border border-emerald-200">
+              <i class="fa-solid fa-house-user"></i>
+            </div>
+            <h3 class="text-base font-bold text-brandNavy">Gorakhpur Home Tutors</h3>
+            <p class="text-xs text-emerald-700 font-bold mt-0.5">कक्षा 1 से 12वीं (सभी विषय)</p>
+            <p class="text-xs text-slate-600 mt-2 font-hindi leading-relaxed">
+              गोरखपुर शहर के सभी कॉलोनियों (बिछिया, मोहद्दीपुर, असुरन, पादरी बाजार आदि) में घर जाकर वन-टू-वन पढ़ाने हेतु।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-700 font-semibold">
+            <span class="text-brandNavy font-bold">योग्यता:</span> Graduates / Subject Experts with Bike/Scooty
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Join Us Strip -->
+      <div class="bg-brandNavy text-white p-6 sm:p-8 rounded-none border border-brandGold/30 mb-12 shadow-lg">
+        <h3 class="text-lg sm:text-xl font-black text-brandGold font-hindi text-center mb-6">
+          🌟 शिक्षा DHAM में पढ़ाने के विशेष लाभ एवं सुविधाएं
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+          <div class="p-3 bg-white/5 border border-white/10 rounded-none">
+            <div class="text-2xl text-brandGold mb-1"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+            <div class="font-bold text-xs sm:text-sm">सम्मानजनक पारिश्रमिक</div>
+            <div class="text-[11px] text-slate-300 mt-0.5">समयबद्ध व पारदर्शी भुगतान</div>
+          </div>
+          <div class="p-3 bg-white/5 border border-white/10 rounded-none">
+            <div class="text-2xl text-emerald-400 mb-1"><i class="fa-solid fa-clock"></i></div>
+            <div class="font-bold text-xs sm:text-sm">लचीला समय (Flexible)</div>
+            <div class="text-[11px] text-slate-300 mt-0.5">बैच व होम ट्यूशन के अनुसार</div>
+          </div>
+          <div class="p-3 bg-white/5 border border-white/10 rounded-none">
+            <div class="text-2xl text-amber-300 mb-1"><i class="fa-solid fa-user-tie"></i></div>
+            <div class="font-bold text-xs sm:text-sm">डायरेक्टर S.P. सर का साथ</div>
+            <div class="text-[11px] text-slate-300 mt-0.5">13+ वर्ष अनुभवी मेंटर्स की टीम</div>
+          </div>
+          <div class="p-3 bg-white/5 border border-white/10 rounded-none">
+            <div class="text-2xl text-blue-300 mb-1"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="font-bold text-xs sm:text-sm">अनुशासित शैक्षणिक माहौल</div>
+            <div class="text-[11px] text-slate-300 mt-0.5">पूर्ण स्वतंत्रता एवं सम्मान</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Two-Column Form & Quick WhatsApp Apply Section -->
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Quick WhatsApp Apply Guidance -->
+        <div class="lg:col-span-5 bg-slate-50 p-6 sm:p-8 rounded-none border border-slate-300 shadow-sm space-y-6">
+          <div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 text-[11px] font-black uppercase tracking-wider bg-emerald-100 text-emerald-800 border border-emerald-300">
+              <i class="fa-brands fa-whatsapp text-emerald-600"></i> Fast Track Application
+            </span>
+            <h3 class="text-xl sm:text-2xl font-black text-brandNavy mt-2 font-hindi">
+              व्हाट्सएप पर तुरंत बायोडाटा / रिज्यूमे भेजें
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-600 font-hindi mt-1.5 leading-relaxed">
+              यदि आपके पास आपका तैयार बायोडाटा (Resume / CV / Biodata PDF या फोटो) मौजूद है, तो आप सीधे डायरेक्टर <strong>S.P. सर</strong> के आधिकारिक व्हाट्सएप पर भेज सकते हैं:
+            </p>
+          </div>
+
+          <div class="bg-white p-4 rounded-none border-l-4 border-l-emerald-500 border-y border-r border-slate-200 space-y-2">
+            <div class="flex items-center gap-2 text-emerald-700 font-bold text-sm">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>व्हाट्सएप नंबर: 9621737794</span>
+            </div>
+            <p class="text-xs text-slate-600 font-hindi leading-relaxed">
+              कृपया मैसेज में अपना <strong>नाम, योग्यता (Degree), पढ़ाने का विषय, और गोरखपुर का क्षेत्र</strong> अवश्य लिखें।
+            </p>
+          </div>
+
+          <a href="https://wa.me/919621737794?text=%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87%20S.P.%20%E0%A4%B8%E0%A4%B0%20(%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE%20DHAM)%2C%20%E0%A4%AE%E0%A5%88%E0%A4%82%20%E0%A4%B6%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%95%20(Teacher%20%2F%20Home%20Tutor)%20%E0%A4%AA%E0%A4%A6%20%E0%A4%B9%E0%A5%87%E0%A4%A4%E0%A5%81%20%E0%A4%86%E0%A4%B5%E0%A5%87%E0%A4%A6%E0%A4%A8%20%E0%A4%95%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9A%E0%A4%BE%E0%A4%B9%E0%A4%A4%E0%A4%BE%20%E0%A4%B9%E0%A5%82%E0%A4%81%E0%A5%A4%20%E0%A4%AE%E0%A5%87%E0%A4%B0%E0%A4%BE%20%E0%A4%B0%E0%A4%BF%E0%A4%9C%E0%A5%8D%E0%A4%AF%E0%A5%82%E0%A4%AE%E0%A5%87%20%E0%A4%B8%E0%A4%82%E0%A4%B2%E0%A4%97%E0%A5%8D%E0%A4%A8%20%E0%A4%B9%E0%A5%88%E0%A5%A4" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-black py-3 px-4 rounded-none text-xs sm:text-sm uppercase tracking-wider transition shadow-md">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>व्हाट्सएप पर डायरेक्ट बायोडाटा भेजें</span>
+          </a>
+
+          <div class="pt-2 border-t border-slate-200 text-xs text-slate-500 font-hindi">
+            <i class="fa-solid fa-phone text-brandGold mr-1"></i> कॉल द्वारा जानकारी हेतु: <a href="tel:9621737794" class="text-brandNavy font-bold hover:underline">9621737794</a>
+          </div>
+        </div>
+
+        <!-- Right: Online Application Form -->
+        <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-none border border-slate-300 shadow-md">
+          <div class="border-b border-slate-200 pb-4 mb-6">
+            <h3 class="text-xl sm:text-2xl font-black text-brandNavy font-hindi">
+              ऑनलाइन शिक्षक आवेदन पत्र (Online Application)
+            </h3>
+            <p class="text-xs text-slate-500 font-hindi mt-1">
+              कृपया नीचे दिया गया फ़ॉर्म भरें। आपका विवरण सीधे हमारे पास दर्ज हो जाएगा।
+            </p>
+          </div>
+
+          <!-- Success Notification -->
+          <div id="teacherFormSuccess" class="hidden mb-6 bg-emerald-50 border-l-4 border-l-emerald-600 p-4 border-y border-r border-emerald-200">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-circle-check text-emerald-600 text-xl mt-0.5"></i>
+              <div class="space-y-2">
+                <h4 class="font-bold text-sm text-emerald-900 font-hindi">
+                  धन्यवाद! आपका शिक्षक आवेदन सफलतापूर्वक दर्ज कर लिया गया है।
+                </h4>
+                <p class="text-xs text-emerald-800 font-hindi leading-relaxed">
+                  डायरेक्टर S.P. सर की टीम आपके आवेदन की समीक्षा करके जल्द ही आपसे संपर्क करेगी। यदि आपके पास बायोडाटा PDF है, तो नीचे दिए गए बटन से तुरंत भेजें:
+                </p>
+                <a id="teacherWaSendBtn" href="https://wa.me/919621737794" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 text-xs rounded-none transition">
+                  <i class="fa-brands fa-whatsapp"></i>
+                  <span>व्हाट्सएप पर बायोडाटा PDF अभी अटैच करें</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <form id="teacherCareerForm" onsubmit="submitTeacherCareerForm(event)" class="space-y-4">
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Name -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  पूरा नाम (Full Name) <span class="text-rose-600">*</span>
+                </label>
+                <input type="text" name="teacherName" required placeholder="जैसे: अमित कुमार" class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+              </div>
+
+              <!-- Phone -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  मोबाइल / WhatsApp नंबर <span class="text-rose-600">*</span>
+                </label>
+                <input type="tel" name="teacherPhone" pattern="[0-9]{10}" required placeholder="10 अंकों का नंबर" class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Qualification -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  सर्वोच्च योग्यता (Qualification) <span class="text-rose-600">*</span>
+                </label>
+                <select name="teacherQualification" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+                  <option value="">योग्यता चुनें...</option>
+                  <option value="B.Sc.">B.Sc.</option>
+                  <option value="M.Sc.">M.Sc.</option>
+                  <option value="B.Ed.">B.Ed.</option>
+                  <option value="M.Sc., B.Ed.">M.Sc., B.Ed.</option>
+                  <option value="B.Tech / B.E.">B.Tech / B.E.</option>
+                  <option value="B.Com / M.Com">B.Com / M.Com</option>
+                  <option value="B.A. / M.A.">B.A. / M.A.</option>
+                  <option value="D.El.Ed / BTC">D.El.Ed / BTC</option>
+                  <option value="Ph.D / अन्य">Ph.D / अन्य</option>
+                </select>
+              </div>
+
+              <!-- Subject -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  मुख्य विषय (Subject) <span class="text-rose-600">*</span>
+                </label>
+                <select name="teacherSubject" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+                  <option value="">विषय चुनें...</option>
+                  <option value="Mathematics (गणित)">Mathematics (गणित)</option>
+                  <option value="Physics (भौतिक विज्ञान)">Physics (भौतिक विज्ञान)</option>
+                  <option value="Chemistry (रसायन विज्ञान)">Chemistry (रसायन विज्ञान)</option>
+                  <option value="Biology (जीव विज्ञान)">Biology (जीव विज्ञान)</option>
+                  <option value="Junior Wings (All Subjects - Playway to 5th)">Junior Wings (All Subjects - Playway to 5th)</option>
+                  <option value="Class 9th-10th Science & Maths">Class 9th-10th Science & Maths</option>
+                  <option value="Accountancy & Economics">Accountancy & Economics</option>
+                  <option value="English Language & Grammar">English Language & Grammar</option>
+                  <option value="NTSE / Navodaya / CHS / Sainik Entrance">NTSE / Navodaya / CHS / Sainik Entrance</option>
+                  <option value="अन्य विषय">अन्य विषय</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Target Level -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  किस कक्षा को पढ़ाना चाहते हैं? <span class="text-rose-600">*</span>
+                </label>
+                <select name="teacherLevel" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+                  <option value="">स्तर चुनें...</option>
+                  <option value="Junior Wings (Playway to 5th)">Junior Wings (Playway to 5th)</option>
+                  <option value="Class 6th to 8th (Middle School)">Class 6th to 8th (Middle School)</option>
+                  <option value="Class 9th & 10th (High School)">Class 9th & 10th (High School)</option>
+                  <option value="Class 11th & 12th Science Stream">Class 11th & 12th Science Stream</option>
+                  <option value="Class 11th & 12th Commerce Stream">Class 11th & 12th Commerce Stream</option>
+                  <option value="Competitive Entrance Exams">Competitive Entrance Exams</option>
+                  <option value="Home Tuition (All Classes)">Home Tuition (All Classes)</option>
+                </select>
+              </div>
+
+              <!-- Experience -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  शिक्षण अनुभव (Experience) <span class="text-rose-600">*</span>
+                </label>
+                <select name="teacherExp" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+                  <option value="">अनुभव चुनें...</option>
+                  <option value="Fresher (0 Years - समर्पित शुरुआत)">Fresher (0 Years - समर्पित शुरुआत)</option>
+                  <option value="1 से 2 वर्ष अनुभव">1 से 2 वर्ष अनुभव</option>
+                  <option value="3 से 5 वर्ष अनुभव">3 से 5 वर्ष अनुभव</option>
+                  <option value="5 वर्ष से अधिक अनुभव (Senior)">5 वर्ष से अधिक अनुभव (Senior)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <!-- Preferred Mode -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  कार्य का प्रकार (Preferred Role) <span class="text-rose-600">*</span>
+                </label>
+                <select name="teacherMode" required class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+                  <option value="Coaching Center & Home Tuition (दोनों)">दोनों (कोचिंग सेंटर व होम ट्यूशन)</option>
+                  <option value="Coaching Center Only (बिछिया सेंटर)">केवल कोचिंग सेंटर (बिछिया)</option>
+                  <option value="Home Tuition Only (गोरखपुर शहर)">केवल होम ट्यूशन (गोरखपुर शहर)</option>
+                </select>
+              </div>
+
+              <!-- Locality -->
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                  गोरखपुर में निवास क्षेत्र (Locality) <span class="text-rose-600">*</span>
+                </label>
+                <input type="text" name="teacherLocality" required placeholder="जैसे: बिछिया, मोहद्दीपुर, असुरन आदि" class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition">
+              </div>
+            </div>
+
+            <!-- Bio / Notes -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">
+                संक्षिप्त परिचय / पिछला अनुभव या Google Drive बायोडाटा लिंक
+              </label>
+              <textarea name="teacherBio" rows="3" placeholder="अपने पिछले अध्यापन अनुभव, कॉलेज या उपलब्धियों के बारे में संक्षेप में लिखें..." class="w-full px-3.5 py-2.5 text-xs sm:text-sm bg-slate-50 border border-slate-300 focus:bg-white focus:border-brandNavy focus:outline-hidden transition"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" id="teacherSubmitBtn" class="w-full bg-brandNavy hover:bg-slate-900 text-brandGold font-black py-3 px-6 rounded-none text-xs sm:text-sm uppercase tracking-wider border-2 border-brandGold shadow-md hover:shadow-lg transition">
+              <i class="fa-solid fa-paper-plane mr-2"></i> शिक्षक आवेदन ऑनलाइन सबमिट करें
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2273,6 +2644,7 @@
             <li><a href="#test-system" class="hover:text-white transition">100-अंक टेस्ट सिस्टम एवं पुरस्कार</a></li>
             <li><a href="#faculty" class="hover:text-white transition">फैकल्टी मेंटर्स टीम</a></li>
             <li><a href="gallery.html" class="text-brandGold hover:underline font-bold flex items-center gap-1.5"><i class="fa-solid fa-images"></i> फ़ोटो गैलरी (Photo Gallery)</a></li>
+            <li><a href="#careers" class="text-amber-300 hover:text-white font-bold flex items-center gap-1.5"><i class="fa-solid fa-briefcase text-brandGold"></i> <span>शिक्षक भर्ती (Join as Teacher)</span></a></li>
             <li><a href="#demo-form" class="hover:text-white transition">3-दिन फ्री डेमो क्लास बुक करें</a></li>
           </ul>
         </div>
@@ -2426,6 +2798,84 @@
         heroForm.reset();
       });
     }
+
+    // ================= TEACHER CAREER APPLICATION HANDLER =================
+    window.submitTeacherCareerForm = async (e) => {
+      e.preventDefault();
+      const form = document.getElementById('teacherCareerForm');
+      const submitBtn = document.getElementById('teacherSubmitBtn');
+      const successDiv = document.getElementById('teacherFormSuccess');
+      if (!form) return;
+
+      const name = form.teacherName ? form.teacherName.value.trim() : '';
+      const phone = form.teacherPhone ? form.teacherPhone.value.trim() : '';
+      const qualification = form.teacherQualification ? form.teacherQualification.value : '';
+      const subject = form.teacherSubject ? form.teacherSubject.value : '';
+      const level = form.teacherLevel ? form.teacherLevel.value : '';
+      const exp = form.teacherExp ? form.teacherExp.value : '';
+      const mode = form.teacherMode ? form.teacherMode.value : '';
+      const locality = form.teacherLocality ? form.teacherLocality.value.trim() : '';
+      const bio = form.teacherBio ? form.teacherBio.value.trim() : '';
+
+      if (!name || !phone) {
+        alert('कृपया अपना नाम और मोबाइल नंबर अवश्य भरें।');
+        return;
+      }
+
+      const originalBtnText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin mr-2"></i> आवेदन दर्ज हो रहा है...';
+
+      // WhatsApp formatted message with pre-filled details
+      const waMsg = encodeURIComponent(
+        `*नमस्ते S.P. सर (शिक्षा DHAM)*,\n` +
+        `मैं शिक्षक (Teacher / Home Tutor) पद हेतु आवेदन कर रहा/रही हूँ।\n\n` +
+        `👤 *नाम:* ${name}\n` +
+        `📱 *फ़ोन:* ${phone}\n` +
+        `🎓 *योग्यता:* ${qualification}\n` +
+        `📚 *विषय:* ${subject}\n` +
+        `🎯 *कक्षा स्तर:* ${level}\n` +
+        `⏳ *अनुभव:* ${exp}\n` +
+        `💼 *मोड:* ${mode}\n` +
+        `📍 *गोरखपुर क्षेत्र:* ${locality}\n` +
+        (bio ? `📝 *परिचय:* ${bio}\n` : '') +
+        `\nमेरा बायोडाटा/रिज्यूमे नीचे संलग्न है:`
+      );
+      const waUrl = `https://wa.me/919621737794?text=${waMsg}`;
+
+      // Payload for Google Sheets Cloud CRM Webhook
+      const payload = {
+        formSource: 'Teacher Career Portal',
+        studentName: `${name} (शिक्षक आवेदक)`,
+        parentName: `योग्यता: ${qualification} | अनुभव: ${exp}`,
+        phone: phone,
+        studentClass: `${level} [${mode}]`,
+        subjects: subject,
+        locality: locality,
+        message: `निवास: ${locality} | विवरण: ${bio} | WhatsApp: ${waUrl}`
+      };
+
+      try {
+        saveAndRouteLead(payload, 'Teacher Career Portal');
+        await submitToGoogleSheet(payload);
+      } catch (err) {
+        console.error('Error submitting teacher career form:', err);
+      }
+
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+
+      if (successDiv) {
+        successDiv.classList.remove('hidden');
+        const waSendBtn = document.getElementById('teacherWaSendBtn');
+        if (waSendBtn) {
+          waSendBtn.href = waUrl;
+        }
+        successDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+
+      form.reset();
+    };
   </script>
 
   <!-- Lottie Player Web Library (Full Build with SVG support, cached & deferred) -->
