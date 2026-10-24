@@ -5,9 +5,14 @@
   <!-- Homepage -->
   <url>
     <loc>https://shikshadham.com/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shikshadham.com/assets/logo.png</image:loc>
+      <image:title>शिक्षा DHAM Gorakhpur Official Emblem Logo</image:title>
+      <image:caption>Official Emblem Logo of Shiksha Dham Coaching Center, Bichhiya, Gorakhpur</image:caption>
+    </image:image>
     <image:image>
       <image:loc>https://shikshadham.com/assets/real_teachers.jpg</image:loc>
       <image:title>शिक्षा DHAM Gorakhpur Faculty Team and Director S. P. Sir</image:title>
@@ -28,7 +33,7 @@
   <!-- Photo Gallery -->
   <url>
     <loc>https://shikshadham.com/gallery.html</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
     <image:image>
