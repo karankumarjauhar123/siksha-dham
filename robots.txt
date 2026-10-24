@@ -1,18 +1,4 @@
-# ============================================================
-# Robots.txt for शिक्षा DHAM Gorakhpur (shikshadham.com)
-# Designed & Optimized for Googlebot, Bingbot & Search Crawlers
-# Developer: Chromux Labs (https://chromuxlabs.in)
-# ============================================================
-
 User-agent: *
 Allow: /
-Allow: /assets/
-Allow: /gallery.html
-Allow: /index.html
 
-# Disallow scrapers from temporary or backup files if any
-Disallow: /*.bak$
-Disallow: /*.temp$
-
-# Sitemap declaration
-Sitemap: https://shikshadham.com/sitemap.xml
+Sitemap: https://sikshadham.in/sitemap.xml
