@@ -2783,6 +2783,7 @@
         const formData = new FormData(heroForm);
         const data = Object.fromEntries(formData.entries());
         data.formSource = 'Hero Quick Demo Form';
+        data.phone = data.phone || data.studentPhone;
         saveAndRouteLead(data, 'Hero Quick Demo Form');
 
         await submitToGoogleSheet(data);
