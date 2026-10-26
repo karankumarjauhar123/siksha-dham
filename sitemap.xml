@@ -58,4 +58,12 @@
     </image:image>
   </url>
 
+  <!-- Google Review Standee -->
+  <url>
+    <loc>https://sikshadham.in/review_standee.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
